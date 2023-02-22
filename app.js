@@ -98,7 +98,6 @@ client.on('messageCreate', async msg => {
                             files: [nouJugador.clau]
                 })
 
-                l+++
         }
         // Si ja no queden usuaris
         else {
