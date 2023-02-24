@@ -97,6 +97,7 @@ client.on('messageCreate', async msg => {
                                     + `Si tens qualsevol dubte, pots contactar amb nosaltres via ${usuariRef}.`, 
                             files: [nouJugador.clau]
                 })
+		countUsuaris++
 
         }
         // Si ja no queden usuaris
