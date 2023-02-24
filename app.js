@@ -32,6 +32,10 @@ client.on("ready", () =>{
 
 client.on('messageCreate', async msg => {
     try{
+
+        // Ignorem els missatges que no siguin del canal general
+        if(msg.channel.name != "general") return
+
         // Ignorem el missatge si el missatge és d'un bot
         if (msg.author.bot) return 
 
@@ -97,8 +101,8 @@ client.on('messageCreate', async msg => {
                                     + `Si tens qualsevol dubte, pots contactar amb nosaltres via ${usuariRef}.`, 
                             files: [nouJugador.clau]
                 })
-		countUsuaris++
 
+                countUsuaris++
         }
         // Si ja no queden usuaris
         else {
